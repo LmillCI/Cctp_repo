@@ -1,0 +1,10 @@
+[
+  {
+    "step": "Check h1 on the page",
+    "screenshot": "example_page_h1.png"
+  },
+  {
+    "step": "Check first item in list",
+    "screenshot": "first_list_item.png"
+  }
+]
