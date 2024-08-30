@@ -19,7 +19,7 @@ jobs:
         continue-on-error: true
 
       - name: Make scripts executable
-        run: chmod +x  pngtobase64.js readssinfo.js newupdated.js
+        run: chmod +x  pngtobase64.js readssinfo.js newmasterinfo.js
 
       - name: Print working directory
         run: pwd
