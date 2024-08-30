@@ -1,0 +1,62 @@
+name: Cypress Tests with Dependency and Artifact Caching
+
+on: push
+
+jobs:
+  install:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Cypress install
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+          test: npm run test
+        continue-on-error: true
+
+      - name: Make scripts executable
+        run: chmod +x Screenshottimestring.js imgtobase64.js
+
+      - name: Print working directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+      
+
+      - name: Run imgtobase64 script
+        run: node pngtobase64.js
+     
+      - name: Update screenshots  and results in repository
+        run: |
+          git config --global user.email "lmillaccnt@gmail.com"
+          git config --global user.name "LmillCI"
+          git add cypress/screenshots
+          git commit -m "Update screenshots"
+          git push origin master
+
+      - name: Upload screenshots artifact
+        uses: actions/upload-artifact@v4.3.5
+        with:
+          name: save-screenshots
+          if-no-files-found: error
+          path: ./cypress/screenshots
+      
+
+  cypress-run:
+    runs-on: ubuntu-22.04
+    needs: install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download the build folder
+        uses: actions/download-artifact@v4
+        with:
+          name: save-screenshots
+          path: ./cypress/screenshots
