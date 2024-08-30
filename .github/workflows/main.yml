@@ -15,11 +15,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           runTests: false
-          test: npm run test
+          build: npm run build
         continue-on-error: true
 
       - name: Make scripts executable
-        run: chmod +x Screenshottimestring.js imgtobase64.js
+        run: chmod +x  pngtobase64.js
 
       - name: Print working directory
         run: pwd
