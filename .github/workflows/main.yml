@@ -19,7 +19,7 @@ jobs:
         continue-on-error: true
 
       - name: Make scripts executable
-        run: chmod +x  pngtobase64.js readssinfo.js newmasterinfo.js
+        run: chmod +x  Screenshottimestring.js imgtobase64.js newupdated.js
 
       - name: Print working directory
         run: pwd
@@ -27,14 +27,15 @@ jobs:
       - name: List files
         run: ls -la
 
-      
+      - name: Run sstime script
+        run: node Screenshottimestring.js
 
       - name: Run imgtobase64 script
-        run: node pngtobase64.js
+        run: node imgtobase64.js
       - name: Run readssinfo script
-        run: node readssinfo.js
+        run: node readjson.js
       - name: Run master json script
-        run: node newmasterinfo.js
+        run: node newupdated.js
      
       - name: Update screenshots  in repository
         run: |
@@ -56,7 +57,7 @@ jobs:
           git config --global user.name "LmillCI"
           git add ./cypress
           git commit -m "Update masterjson"
-          git push origin master
+          git push origin main
 
       - name: Upload master json
         uses: actions/upload-artifact@v4.3.5
