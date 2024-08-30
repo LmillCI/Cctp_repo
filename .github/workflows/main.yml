@@ -1,0 +1,81 @@
+name: Cypress Tests with Dependency and Artifact Caching
+
+on: push
+
+jobs:
+  install:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Cypress install
+        uses: cypress-io/github-action@v6
+        with:
+          runTests: false
+          build: npm run build
+        continue-on-error: true
+
+      - name: Make scripts executable
+        run: chmod +x  Screenshottimestring.js imgtobase64.js newupdated.js
+
+      - name: Print working directory
+        run: pwd
+
+      - name: List files
+        run: ls -la
+
+      - name: Run sstime script
+        run: node Screenshottimestring.js
+
+      - name: Run imgtobase64 script
+        run: node imgtobase64.js
+      - name: Run readssinfo script
+        run: node readjson.js
+      - name: Run master json script
+        run: node newupdated.js
+     
+      - name: Update screenshots  in repository
+        run: |
+          git config --global user.email "lmillaccnt@gmail.com"
+          git config --global user.name "LmillCI"
+          git add cypress/screenshots
+          git commit -m "Update screenshots"
+          git push origin main
+
+      - name: Upload screenshots artifact
+        uses: actions/upload-artifact@v4.3.5
+        with:
+          name: save-screenshots
+          if-no-files-found: error
+          path: ./cypress/screenshots
+      - name: Update master json  in repository
+        run: |
+          git config --global user.email "lmillaccnt@gmail.com"
+          git config --global user.name "LmillCI"
+          git add ./cypress
+          git commit -m "Update masterjson"
+          git push origin main
+
+      - name: Upload master json
+        uses: actions/upload-artifact@v4.3.5
+        with:
+          name: master json
+          if-no-files-found: error
+          path: ./cypress
+      
+
+  cypress-run:
+    runs-on: ubuntu-22.04
+    needs: install
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download the build folder
+        uses: actions/download-artifact@v4
+        with:
+          name: save-screenshots
+          path: ./cypress/screenshots
