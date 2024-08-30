@@ -1,42 +1,147 @@
-cypress\e2e\demo.cy.js:
+cypress/e2e/demo.cy.js:
     Demo -> Testcase1
-                        Time: 1724839828766
+                        Time: 1724995522297
             cy:log (K): Google page visits
-                        Time: 1724839828790
+                        Time: 1724995522314
         cy:command (K): visit	https://www.google.com/
-                        Time: 1724839830791
-            cy:xhr (K): GET https://www.google.com/complete/search?q&cp=0&client=gws-wiz&xssi=t&gs_pcrt=2&hl=en-IN&authuser=0&psi=lvfOZqPDC-aP2roP_Yv88AY.1724839830741&dpr=1&nolsbt=1
-                        Status: 200
-                        Time: 1724839830800
-          cy:fetch (K): GET https://www.google.com/xjs/_/js/md=2/k=xjs.hd.en.s55WiEAMIO4.O/am=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAhAAFAACAAgAAAAAAAAAAAAAAAAQIAQBEAQAAAgA4AACCABAAQEAAACBAEIBHmQAAAsAEAAAAAEAAAASAAAAQAAAABgAAQAAAAAAAQAEAAAAAAAAAAAAAAADAAAIIAAAAAAAAAAAAAAEAAABABwAAAAAAAQAAAQEAMEAGEAAACAAAAEAPAIIHwCCFBQAAAAAAAAAAAAAAApAgmAsJKAiAAAAAAAAAAAAAAAAAAEhJExc2/rs=ACT90oG4I8S2i-QIAGkq2afCVphObVUo1w
-                        Status: 200
-                        Time: 1724839831195
-          cy:fetch (K): GET https://www.google.com/xjs/_/ss/k=xjs.hd.Ry4vZNqc0Nw.L.B1.O/am=AFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAoADoSQCAAAA2ACAAAAAAAgAIAAAAAABAAQAAAQQwAAAAAEAAAERABAAIEAAAAAAQAgIAEIACIUCABASAIAoBAAAABgAAQgAYYBiAUAHAKEAAAAAAgIAIAAAAAGoEIEAAgB6BADAABBEAAEJAByAAAAIABIAAAAQEMEAGEAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAKAAAAAAAAAAAAAAAAAAAAAAB/d=0/br=1/rs=ACT90oFxTJAbbq8JaweWNNyNYs1qC3lntQ/m=syjw,syl1?xjs=s4
-                        Status: 200
-                        Time: 1724839831220
-            cy:xhr (K): GET https://www.google.com/client_204?cs=1&opi=89978449
-                        Status: 204
-                        Time: 1724839831224
-            cy:xhr (K): GET https://www.google.com/async/hpba?vet=10ahUKEwij5v2KuZeIAxXmh1YBHf0FH24Qj-0KCBQ..i&ei=lvfOZqPDC-aP2roP_Yv88AY&opi=89978449&yv=3&sp_imghp=false&sp_hpep=1&stick=&cs=0&async=_basejs:%2Fxjs%2F_%2Fjs%2Fk%3Dxjs.hd.en.s55WiEAMIO4.O%2Fam%3DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAhAAFAACAAgAAAAAAAAAAAAAAAAQIAQBEAQAAAgA4AACCABAAQEAAACBAEIBHmQAAAsAEAAAAAEAAAASAAAAQAAAABgAAQAAAAAAAQAEAAAAAAAAAAAAAAADAAAIIAAAAAAAAAAAAAAEAAABABwAAAAAAAQAAAQEAMEAGEAAACAAAAEAPAIIHwCCFBQAAAAAAAAAAAAAAApAgmAsJKAiAAAAAAAAAAAAAAAAAAEhJExc2%2Fdg%3D0%2Fbr%3D1%2Frs%3DACT90oG4I8S2i-QIAGkq2afCVphObVUo1w,_basecss:%2Fxjs%2F_%2Fss%2Fk%3Dxjs.hd.Ry4vZNqc0Nw.L.B1.O%2Fam%3DAFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAoADoSQCAAAA2ACAAAAAAAgAIAAAAAABAAQAAAQQwAAAAAEAAAERABAAIEAAAAAAQAgIAEIACIUCABASAIAoBAAAABgAAQgAYYBiAUAHAKEAAAAAAgIAIAAAAAGoEIEAAgB6BADAABBEAAEJAByAAAAIABIAAAAQEMEAGEAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAKAAAAAAAAAAAAAAAAAAAAAAB%2Fbr%3D1%2Frs%3DACT90oFxTJAbbq8JaweWNNyNYs1qC3lntQ,_basecomb:%2Fxjs%2F_%2Fjs%2Fk%3Dxjs.hd.en.s55WiEAMIO4.O%2Fck%3Dxjs.hd.Ry4vZNqc0Nw.L.B1.O%2Fam%3DAFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAApADtSQCAAgA2ACAAAAAAAgAIAAQIAQBEAQAAAwQ4AACCAFAAQERABCBIEIBHmQAQAsIEEIACIUCABASAIAoRAAAABgAAQgAYYBiAUAHAKEAAAAAAgIAIAADAAGoMIEAAgB6BADAABBEAAEJAByAAAAIABYAAAQUEMEAGEAAACAAAAEAPAIIHwCCFBQAAAAAAAAAAAAAAApAgmAsJKAiAAAAAAAAAAAAAAAAAAEhJExc2%2Fd%3D1%2Fed%3D1%2Fdg%3D0%2Fbr%3D1%2Fujg%3D1%2Frs%3DACT90oGs21ZL2aLTk2ymLrnQDqRR46OKew,_fmt:prog,_id:_lvfOZqPDC-aP2roP_Yv88AY_8
-                        Status: 200
-                        Time: 1724839831758
+                        Time: 1724995523242
             cy:xhr (K): POST https://ogads-pa.googleapis.com/$rpc/google.internal.onegoogle.asyncdata.v1.AsyncDataService/GetAsyncData
                         Status: 200
-                        Time: 1724839832368
+                        Time: 1724995523432
+            cy:xhr (K): GET https://www.google.com/complete/search?q&cp=0&client=gws-wiz&xssi=t&gs_pcrt=2&hl=en&authuser=0&psi=wlfRZqzWE_jl5NoPipSa2Qw.1724995523371&dpr=1&nolsbt=1
+                        Status: 200
+                        Time: 1724995523435
+          cy:fetch (K): GET https://www.google.com/xjs/_/js/md=2/k=xjs.hd.en.XaUrckzPXn8.O/am=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAEKAAAABQAAAAAAAAAAAAAAAAQIAQBEAQAAAgA4AAAEAQAEABAQAAAIEATgUS4AgAAwAQAAAAAQAAACQAAACAAAAAMAACAAAAAAAKAAAAAAAAAAAAAAAAAAYAABBAAAAAAAAAAAAIAAAAAAoAMAAAAAgAAAgIAAABggAwgAAAQAAACgDwCCB8AghQUAAAAAAAAAAAAAAAKQIJgLCSgIQAAAAAAAAAAAAAAAAACkpIkLGw/rs=ACT90oHoULrEGTvFZDoqQTUrjgostcLodg
+                        Status: 200
+                        Time: 1724995523856
+          cy:fetch (K): GET https://www.google.com/xjs/_/ss/k=xjs.hd.x7iUpj_bKZE.L.B1.O/am=IFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAAQAGwkwAAAQBsAEAAAAAABAAIAAAAAABAAQAAAQSwAAAAAAAQAAAREAEACgQAAAgAhLAAAAQgQAgQQAICQBCFAAAAAAMAACEADDAMQKgAYBQgAAAAAEBABAAAAAA1AhAgAECPQAA4AIIIAAAhoAMQAAABAAJAAAAOAhggAwgAAAAAAACADAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIACgAAAAAAAAAAAAAAAAAAACA/d=0/br=1/rs=ACT90oHCkflhKJ4Uxw3qmDc-3J3_ckUQjQ/m=syju,sykz?xjs=s4
+                        Status: 200
+                        Time: 1724995523875
+            cy:xhr (K): GET https://www.google.com/client_204?cs=1&opi=89978449
+                        Status: 204
+                        Time: 1724995523878
+            cy:xhr (K): GET https://www.google.com/async/hpba?vet=10ahUKEwisv-OK_ZuIAxX4MlkFHQqKJssQj-0KCBY..i&ei=wlfRZqzWE_jl5NoPipSa2Qw&opi=89978449&yv=3&sp_imghp=false&sp_hpep=1&stick=&cs=0&async=_basejs:%2Fxjs%2F_%2Fjs%2Fk%3Dxjs.hd.en.XaUrckzPXn8.O%2Fam%3DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAEKAAAABQAAAAAAAAAAAAAAAAQIAQBEAQAAAgA4AAAEAQAEABAQAAAIEATgUS4AgAAwAQAAAAAQAAACQAAACAAAAAMAACAAAAAAAKAAAAAAAAAAAAAAAAAAYAABBAAAAAAAAAAAAIAAAAAAoAMAAAAAgAAAgIAAABggAwgAAAQAAACgDwCCB8AghQUAAAAAAAAAAAAAAAKQIJgLCSgIQAAAAAAAAAAAAAAAAACkpIkLGw%2Fdg%3D0%2Fbr%3D1%2Frs%3DACT90oHoULrEGTvFZDoqQTUrjgostcLodg,_basecss:%2Fxjs%2F_%2Fss%2Fk%3Dxjs.hd.x7iUpj_bKZE.L.B1.O%2Fam%3DIFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAAQAGwkwAAAQBsAEAAAAAABAAIAAAAAABAAQAAAQSwAAAAAAAQAAAREAEACgQAAAgAhLAAAAQgQAgQQAICQBCFAAAAAAMAACEADDAMQKgAYBQgAAAAAEBABAAAAAA1AhAgAECPQAA4AIIIAAAhoAMQAAABAAJAAAAOAhggAwgAAAAAAACADAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIACgAAAAAAAAAAAAAAAAAAACA%2Fbr%3D1%2Frs%3DACT90oHCkflhKJ4Uxw3qmDc-3J3_ckUQjQ,_basecomb:%2Fxjs%2F_%2Fjs%2Fk%3Dxjs.hd.en.XaUrckzPXn8.O%2Fck%3Dxjs.hd.x7iUpj_bKZE.L.B1.O%2Fam%3DIFEAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAASAG6kwAABQBsAEAAAAAABAAIAAQIAQBEAQAAAwS4AAAEAQAUABAREAEIGgTgUS4AhLAwAQQgQAgQQAICQBCFCAAAAAMAACEADDAMQKgAYBQgAAAAAEBABAAAYAA1BhAgAECPQAA4AIIIAAAhoAMQAAABgAJAgIAOAhggAwgAAAQAAACgDwCCB8AghQUAAAAAAAAAAAAAAAKQIJgLCSgIQAAAAAAAAAAAAAAAAACkpIkLGw%2Fd%3D1%2Fed%3D1%2Fdg%3D0%2Fbr%3D1%2Fujg%3D1%2Frs%3DACT90oH9PIDig7DjOTdqK1rlxQT9PDh_yA,_fmt:prog,_id:_wlfRZqzWE_jl5NoPipSa2Qw_8
+                        Status: 200
+                        Time: 1724995523920
             cy:xhr (K): POST https://play.google.com/log?format=json&hasfast=true
                         Status: 200
-                        Time: 1724839833173
+                        Time: 1724995523984
           cy:fetch (K): POST https://play.google.com/log?format=json&hasfast=true&authuser=0
                         Status: 200
-                        Time: 1724839833254
+                        Time: 1724995524020
         cy:command (K): screenshot
-                        Time: 1724839834376
+                        Time: 1724995524403
         cy:command (K): screenshot
-                        Time: 1724839834402
-            cy:xhr (K): POST https://play.google.com/log?format=json&hasfast=true
-                        Status: 200
-                        Time: 1724839834764
+                        Time: 1724995524658
             cy:log (K): bye
-                        Time: 1724839834776
+                        Time: 1724995524663
         cy:command (K): task	readLogFile
+
+
+
+cypress/e2e/sampletest.cy.js:
+    Logging example -> TC01 - Welcome to logs
+                        Time: 1724995527905
+            cy:log (K): Hiii hello Test started
+                        Time: 1724995527909
+        cy:command (K): visit	https://example.com
+                        Time: 1724995527948
+        cy:command (K): screenshot
+                        Time: 1724995528155
+        cy:command (K): screenshot
+                        Time: 1724995528335
+            cy:log (K): Bye Test completed
+                        Time: 1724995528338
+        cy:command (K): task	readLogFile
+
+    Logging example -> TC02 - another test case example
+                        Time: 1724995529942
+            cy:log (K): Test started Successfully
+                        Time: 1724995529947
+        cy:command (K): visit	https://example.cypress.io/
+                        Time: 1724995530142
+            cy:log (K): Test completed Successfully
+                        Time: 1724995530144
+        cy:command (K): screenshot
+                        Time: 1724995532074
+        cy:command (K): screenshot
+                        Time: 1724995533947
+        cy:command (K): task	readLogFile
+
+    Logging example -> TC03 - Login Test
+                        Time: 1724995536337
+        cy:command (K): visit	https://opensource-demo.orangehrmlive.com/ -> 302: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+                        Time: 1724995537659
+        cy:command (K): title
+                        Time: 1724995537665
+        cy:command (X): assert	expected **OrangeHRM** to equal **OrangeHRM123**
+                        Actual: 	"OrangeHRM"
+                        Expected: 	"OrangeHRM123"
+                        Time: 1724995537674
+            cy:xhr (K): GET https://opensource-demo.orangehrmlive.com/web/index.php/core/i18n/messages
+                        Status: 200
+
+    Logging example -> TC04 - 4th example
+                        Time: 1724995541848
+        cy:command (K): visit	https://opensource-demo.orangehrmlive.com/ -> 302: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+                        Time: 1724995542271
+        cy:command (K): get	input[name='username']
+                        Time: 1724995542276
+            cy:xhr (K): GET https://opensource-demo.orangehrmlive.com/web/index.php/core/i18n/messages
+                        Status: 200
+                        Time: 1724995542754
+        cy:command (K): type	Admin
+                        Time: 1724995542948
+        cy:command (K): get	input[name='password']
+                        Time: 1724995542950
+        cy:command (K): type	admin123
+                        Time: 1724995543167
+        cy:command (K): get	button[type='submit']
+                        Time: 1724995543169
+        cy:command (K): click
+                        Time: 1724995543194
+        cy:command (K): page load	--page loaded--
+                        Time: 1724995544098
+        cy:command (K): new url	https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+                        Time: 1724995544132
+            cy:xhr (!): GET https://opensource-demo.orangehrmlive.com/web/index.php/core/i18n/messages
+                        Status: 304
+                        Time: 1724995544134
+        cy:command (K): screenshot
+                        Time: 1724995544500
+            cy:xhr (K): GET https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/employees/action-summary
+                        Time: 1724995544501
+            cy:xhr (K): GET https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/employees/time-at-work?timezoneOffset=0&currentDate=2024-08-30&currentTime=05:25
+                        Time: 1724995544502
+            cy:xhr (K): GET https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/buzz/feed?limit=5&offset=0&sortOrder=DESC&sortField=share.createdAtUtc
+                        Time: 1724995544503
+            cy:xhr (K): GET https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/dashboard/shortcuts
+
+
+
+cypress/e2e/secondemo.cy.js:
+    Demo -> Testcase1
+                        Time: 1724995548994
+            cy:log (K): Amazon site visits
+                        Time: 1724995549005
+        cy:command (K): visit	https://www.amazon.in/
+                        Time: 1724995550557
+          cy:fetch (K): GET https://m.media-amazon.com/images/G/01/csm/showads.v2.js?category=ad&adstype=-ad-column-&ad_size=-housead-
+                        Status: 200
+                        Time: 1724995551093
+            cy:xhr (K): POST https://www.amazon.in/ah/ajax/counter?ctr=desktop_ajax_atf&exp=1724995669096&rId=DAXNTAZFKP0M81JSPF03&mkId=A21TJRUUN4KGV&h=e210f5244d0775f0fb99e387400e9315c93df593fd27ee647057f423fb67c4fe
+                        Status: 202
+                        Time: 1724995551529
+            cy:xhr (K): HEAD https://completion.amazon.in/api/2017/suggestions
+                        Status: 204
+                        Time: 1724995552357
+        cy:command (K): screenshot
+                        Time: 1724995555164
+            cy:log (K): visiting completed
+                        Time: 1724995555170
+        cy:command (K): task	readLogFile
+                        Time: 1724995555379
+            cy:xhr (K): HEAD https://m.media-amazon.com/images/I/31GEH239AIL._AC_SY200_.jpg
+                        Time: 1724995555381
+            cy:xhr (K): HEAD https://m.media-amazon.com/images/I/31fMSsn2cpL._AC_SY200_.jpg
 
