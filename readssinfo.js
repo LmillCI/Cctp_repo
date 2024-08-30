@@ -16,7 +16,7 @@ fs.readFile('./cypress/screenshots/screenshot-details.json', 'utf8', (err, data)
    
  
     // Step 3: Write the transformed data to another file
-    fs.writeFile('./cypress/results/masterssinfo.json',jsonString, 'utf8', (err) => {
+    fs.writeFile('./cypress/masterssinfo.json',jsonString, 'utf8', (err) => {
       if (err) {
         console.error('Error writing the file:', err);
         return;
