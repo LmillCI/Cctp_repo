@@ -34,7 +34,7 @@ jobs:
       - name: Run readssinfo script
         run: node readssinfo.js
       - name: Run master json script
-        run: node newupdated.js
+        run: node newmasterinfo.js
      
       - name: Update screenshots  in repository
         run: |
