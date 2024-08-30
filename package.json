@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cypress run --spec cypress/e2e/demofile.cy.js"
+    "build": "cypress run "
     
   },
   "screenshotsFolder": "cypress/screenshots",
