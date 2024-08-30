@@ -11,7 +11,7 @@ fs.readFile('./cypress/screenshots/screenshot-details.json', 'utf8', (err, data)
     const newJsonData = JSON.parse(data);
  
     // Step 3: Read the Master JSON File
-    fs.readFile('./cypress/results/masterssinfo.json', 'utf8', (err, masterData) => {
+    fs.readFile('./cypress/masterssinfo.json', 'utf8', (err, masterData) => {
         if (err) {
             console.error('Error reading the master file:', err);
             return;
