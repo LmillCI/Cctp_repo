@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec cypress/e2e/demofile.cy.js",
-    "base64": "node pngtobase64.js"
+    "build": "cypress run --spec cypress/e2e/demofile.cy.js"
+    
   },
   "screenshotsFolder": "cypress/screenshots",
   "keywords": [],
